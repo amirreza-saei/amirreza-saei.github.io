@@ -1,103 +1,540 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your website title</title>
-  <!-- Add some style for the tabs and the tab content -->
-  <style>
-    /* Style the tab */
-    .tab {
-      overflow: hidden;
-      border: 1px solid #ccc;
-      background-color: #f1f1f1;
-    }
+    <meta charset="utf-8">
+    <title>Amir Reza Saei</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="amirrezasaei, amirreza-saei, amir reza saei, amirreza saei" name="keywords">
+    <meta content="Amir Reza Saei: Embedded Software Developer" name="description">
 
-    /* Style the buttons that are used to open the tab content */
-    .tab button {
-      background-color: inherit;
-      float: left;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      padding: 14px 16px;
-      transition: 0.3s;
-    }
+    <!-- Favicon -->
+    <link href="img/icon.png" rel="icon">
 
-    /* Change background color of buttons on hover */
-    .tab button:hover {
-      background-color: #ddd;
-    }
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
 
-    /* Create an active/current tablink class */
-    .tab button.active {
-      background-color: #ccc;
-    }
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    /* Style the tab content */
-    .tabcontent {
-      display: none;
-      padding: 6px 12px;
-      border: 1px solid #ccc;
-      border-top: none;
-    }
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-    /* Add a blue theme to the tab content */
-    .tabcontent.blue {
-      background-color: #d0e9ff;
-      color: #333;
-    }
-  </style>
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
-  <h1>Welcome to your website</h1>
-  <p>This is a sample paragraph. You can edit this file or add more files to your repository.</p>
-  <!-- Add some tabs with different content -->
-  <div class="tab">
-    <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
-    <button class="tablinks" onclick="openTab(event, 'About')">About</button>
-    <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
-  </div>
 
-  <div id="Home" class="tabcontent blue">
-    <h3>Home</h3>
-    <p>This is the home page of your website.</p>
-  </div>
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <!-- <h1 class="m-0 display-5"><span class="text-primary">Free</span>Folio</h1> -->
+            <h1 class="m-0 display-5"> <img class="" style="max-width: 250px; height: auto;" src="img/name.jpg" alt=""> </h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#qualification" class="nav-item nav-link">Quality</a>
+                <a href="#skill" class="nav-item nav-link">Skill</a>
+                <a href="#service" class="nav-item nav-link">Software</a>
+                <a href="#portfolio" class="nav-item nav-link">Projects</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
 
-  <div id="About" class="tabcontent blue">
-    <h3>About</h3>
-    <p>This is the about page of your website.</p>
-  </div>
 
-  <div id="Contact" class="tabcontent blue">
-    <h3>Contact</h3>
-    <p>This is the contact page of your website.</p>
-  </div>
-  <!-- Add some JavaScript to make the tabs work -->
-  <script>
-    function openTab(evt, tabName) {
-      // Declare all variables
-      var i, tabcontent, tablinks;
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.jpg" alt="">
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Amir Reza Saei</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Embedded Software Developer</div> 
+                    <!-- <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Embedded Software Developer, Embedded C Developer, C++ Developer</div> -->
+                    <div class="d-flex align-items-center justify-content-center  pt-5" style="width: 100%;">
+                        <a href="CV.pdf" class="btn btn-outline-light" target="_blank">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
 
-      // Get all elements with class="tabcontent" and hide them
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
 
-      // Get all elements with class="tablinks" and remove the class "active"
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Embedded Software Engineer</h3>
+                    <!--
+                    <p class="introduction-paragraph">Greetings! My name is Amir Reza Saei, a 27-year-old from Iran. I currently work as an Automotive Embedded Software Engineer specializing in BCM (Body Control Module) at Sazeh Pouyesh Co. (Ezam Group).</p>
+                    <p class="introduction-paragraph">I obtained my master's degree in Micro and Nano Electronics Devices Engineering from the University of Tehran in September 2023. Prior to that, I completed my Bachelor's degree at the University of Isfahan in January 2020.</p>
+                    <p class="introduction-paragraph">My industrial experience revolves primarily around my passion for coding. I have extensive proficiency in C and embedded C languages, with a solid understanding of C++ and Python. In addition, I have focused on mastering STM32 coding, predominantly utilizing HAL and CMSIS libraries. Notably, I have designed and implemented industrial-grade code for various VFD inverter devices, particularly using the STM32F group.</p>
+                    <p class="introduction-paragraph">Moreover, I have a keen interest in practical experience, particularly in integrating communication protocols such as CAN Bus, UART, RS485, Modbus, I2C, and SPI into embedded systems. My familiarity with Real-Time Operating Systems (RTOS), including FreeRTOS and embOS, allows me to design responsive and efficient embedded applications.</p>
+                    <p class="introduction-paragraph">Furthermore, I am well-versed in Modular and Object-Oriented Programming patterns in C, enabling me to write scalable and maintainable code for complex embedded systems.</p>
+                    -->
+                    <p class="introduction-paragraph">Greetings! I'm Amir Reza Saei, an Automotive Embedded Software Engineer at Sazeh Pouyesh Co. (Ezam Group) in Iran. Holding a master's degree in Micro and Nano Electronics Devices Engineering from the University of Tehran, I specialize in BCM (Body Control Module).</p>
+                    <p class="introduction-paragraph">With a strong background in C and embedded C languages, along with proficiency in C++ and Python, I excel in STM32 coding, focusing on HAL and CMSIS libraries. I've developed industrial-grade code for various VFD inverter devices, primarily using the STM32F group. I am also familiar with Renesas RH850 microcontrollers group.</p>
+                    <p class="introduction-paragraph">My expertise extends to integrating communication protocols such as CAN Bus, UART, RS485, Modbus, I2C, and SPI into embedded systems. Familiar with Real-Time Operating Systems (RTOS) like FreeRTOS and embOS, I design responsive embedded applications.</p>
+                    <p class="introduction-paragraph">Furthermore, I'm adept in Modular and Object-Oriented Programming patterns in C, enabling me to craft scalable and maintainable code for intricate embedded systems.</p>
+                    <!--
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Kate Winslet</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">1 April 1990</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Master</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">10 Years</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+012 345 6789</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">info@example.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">123 Street, New York, USA</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Available</span></h6></div>
+                    </div>
+                    -->
+                    <!--
+                    <a href="" class="btn btn-outline-primary mr-4">Hire Me</a>
+                    <a href="" class="btn btn-outline-primary">Learn More</a>
+                    -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
 
-      // Show the current tab, and add an "active" class to the button that opened the tab
-      document.getElementById(tabName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
 
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
-  </script>
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Education</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">MSc in Electrical Engineering</h5>
+                            <p class="mb-2"><strong>University of Tehran</strong> | <small>2020 - 2023</small></p>
+                            <p>During my master's studies at the University of Tehran, I delved into Electronics Engineering, focusing on Micro and Nano Electronics Devices Engineering from 2020 to 2023.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">BSc of Electrical Engineering</h5>
+                            <p class="mb-2"><strong>University of Isfahan</strong> | <small>2014 - 2019</small></p>
+                            <p>Earning my BSc in Electrical Engineering from the University of Isfahan, I specialized in Electronics Engineering, a field that captivated my interest from 2014 to 2019.</p>
+                        </div>
+                        <!--
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Master In CSE</h5>
+                            <p class="mb-2"><strong>Cambridge University</strong> | <small>2000 - 2050</small></p>
+                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                        </div>
+                        -->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Expericence</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Automative embedded software engineer</h5>
+                            <p class="mb-2"><strong>Sazeh Pouyesh</strong> | <small>Dec 2023 - Present</small></p>
+                            <p>I work on programming and fixing the C code for the RH850 microcontroller, which is part of the 
+                                Body Control Module (BCM) in various car models like TARA, DENA, and P207. The code is designed 
+                                to be organized and modular, allowing different parts of the BCM to interact smoothly, similar to 
+                                object-oriented programming. Additionally, I develop code for an automatic tester that checks the BCM’s 
+                                functions, using the same structured approach as the BCM’s code. I have experience with automotive communication 
+                                systems such as CAN bus, using tools like CANalyzer, and LIN protocol.
+                            </p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Embedded system (software) engineer</h5>
+                            <p class="mb-2"><strong>Electrochemetal Technology</strong> | <small>Jun 2023 - Dec 2023</small></p>
+                            <p>During my journey in a new founded company with a high passion, I developed software for 3 Phase 
+                                inverters used in Variable Frequency Drives (VFDs). I wrote the code in C for STM32 microcontrollers, 
+                                utilizing the CMSIS library. The project involved two circuit boards, each with a microcontroller, 
+                                communicating via the RS485 protocol. One board was the main control for the VFD, and the other was 
+                                a keypad designed to operate from a distance of at least 2 meters. Ultimately, we created devices 
+                                that offer over 180 customizable parameters and numerous features, all at a competitive price 
+                                point compared to market alternatives.
+                            </p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Joniur electronics engineer</h5>
+                            <p class="mb-2"><strong>Behyaar Co</strong> | <small>Mar 2021 - Sep 2021</small></p>
+                            <p>At Behyaar Co, I mainly focused on creating and programming electronic boards for drones and the 
+                                Audio Panel Module for a small airplane’s cockpit, designed for 8 passengers. However, the module’s 
+                                development was not completed because I moved to Tehran to pursue my master’s degree.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Qualification End -->
+
+
+    <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Embedded C</h6>
+                            <!-- <h6 class="font-weight-bold">80%</h6> -->
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-progressbar80" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">C++</h6>
+                            <!-- <h6 class="font-weight-bold">50%</h6> -->
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-progressbar40" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Python</h6>
+                            <!-- <h6 class="font-weight-bold">30%</h6> -->
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-progressbar20" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Basic Communication Protocols</h6>
+                            <!-- <h6 class="font-weight-bold">30%</h6> -->
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-progressbar40" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">STM32</h6>
+                            <!-- <h6 class="font-weight-bold">40%</h6> -->
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-progressbar40" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Printed Circuit Board Design (Altium Designer)</h6>
+                            <!-- <h6 class="font-weight-bold">30%</h6> -->
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-progressbar20" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">CAN Bus</h6>
+                            <!-- <h6 class="font-weight-bold">50%</h6> -->
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-progressbar60" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Object-Oriented Programming</h6>
+                            <!-- <h6 class="font-weight-bold">30%</h6> -->
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-progressbar40" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skill End -->
+
+
+    <!-- Services Start -->
+    <!-- <div class="container-fluid pt-5" id="service">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Service</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Services</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Web Design</h4>
+                    </div>
+                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Web Development</h4>
+                    </div>
+                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Apps Design</h4>
+                    </div>
+                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fab fa-2x fa-apple service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Apps Development</h4>
+                    </div>
+                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">SEO</h4>
+                    </div>
+                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-edit service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Content Creating</h4>
+                    </div>
+                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Services End -->
+
+
+    <!-- Portfolio Start -->
+   <!--  <div class="container-fluid pt-5 pb-3" id="portfolio">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Design</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Development</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Marketing</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-4.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Portfolio End -->
+
+    <!-- Contact Start -->
+    <!-- <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                        required="required" data-validation-required-message="Please enter your name" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                        required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
+                                    required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                    required="required"
+                                    data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
+                                    Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/amirreza-saei-05a417117?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://t.me/Iamamirrezas"><i class="fab fa-telegram"></i></a>
+                <a class="btn btn-light btn-social" href="https://www.instagram.com/amirrezasaei?igsh=MnNzZjBnZWh1ZGV0"><i class="fab fa-instagram"></i></a>
+                
+            </div>
+             <div class="d-flex justify-content-center mb-3">
+                <span class="px-3">|</span>
+                <p>amirrezasaeigh@gmail.com</p>
+                <span class="px-3">|</span>
+                <p>+98 913 60 333 20</p>
+                <span class="px-3">|</span>
+<!--                 <a class="text-white" href="#">Privacy</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Terms</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">FAQs</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Help</a> -->
+            </div>
+            <!-- <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Domain Name</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+            </p> -->
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>

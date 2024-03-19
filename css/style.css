@@ -6467,6 +6467,26 @@ button.bg-dark:focus {
   background-color: transparent !important;
 }
 
+.bg-progressbar0{
+  background-color: #5acbfd;
+}
+
+.bg-progressbar20{
+  background-color: #18b7fc;
+}
+
+.bg-progressbar40{
+  background-color: #03a8f1;
+}
+
+.bg-progressbar60{
+  background-color: #027aaf;
+}
+
+.bg-progressbar80{
+  background-color: #014562;
+}
+
 .border {
   border: 1px solid #dee2e6 !important;
 }
